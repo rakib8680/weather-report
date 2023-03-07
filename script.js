@@ -11,12 +11,14 @@ const displayData = data => {
     document.getElementById('city').innerText = data.name
     document.getElementById('temp').innerText = data.main.temp;
     document.getElementById('weather').innerText = data.weather[0].main
+    document.getElementById('humidity').innerText = data.main.humidity
 
 };
 
 const searchByCity = () => {
     const cityName = document.getElementById('input-field').value;
     fetchData(cityName);
+    
 }
 
 
